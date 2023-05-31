@@ -61,9 +61,9 @@ python train_lol_v1_whole.py --img_path Your_Path/our485/low/ --img_val_path You
 
 1. Download the dataset from the [here](https://github.com/HuiZeng/Image-Adaptive-3DLUT).
 
-2. Evaluation pretrain model on LOL-V1 dataset
+2. Evaluation pretrain model on FiveK dataset
 ```
-python evaluation_mit5k.py --img_path Your_Path/to/root/
+python evaluation_mit5k.py --img_path Your_Path/to/root/dataset/
 ```
 
 Results:
@@ -71,10 +71,10 @@ Results:
 | -- | -- | -- | -- |
 |  results  | **0.894**  |  **24.71** | |
 
-3. Training your model on FiveK dataset (single GPU), for FiveK, you don't need create patch and directly train is OK. 
+3. Training your model on FiveK dataset (single GPU). for FiveK, you don't need create patch and directly train is OK. //
    Importantly, our data_loader will resize origin images into 600x450
 ```
-python train_mit5k.py --gpu_id 0 --img_path Your_Path/to/root/
+python train_mit5k.py --gpu_id 0 --img_path Your_Path/to/root/dataset/
 ```
 
 <br/>
