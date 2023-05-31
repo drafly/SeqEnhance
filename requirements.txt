@@ -1,0 +1,3 @@
+timm==0.6.12
+IQA-pytorch==0.1
+wandb
