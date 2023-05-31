@@ -71,10 +71,10 @@ Results:
 | -- | -- | -- | -- |
 |  results  | **0.894**  |  **24.71** | |
 
-3. Training your model on FiveK dataset (single GPU). for FiveK, you don't need create patch and directly train is OK. //
+3. Training your model on FiveK dataset. for FiveK, you don't need create patch and directly train is OK. 
    Importantly, our data_loader will resize origin images into 600x450
 ```
-python train_mit5k.py --gpu_id 0 --img_path Your_Path/to/root/dataset/
+python train_mit5k.py --img_path Your_Path/to/root/dataset/
 ```
 
 <br/>
